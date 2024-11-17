@@ -9,17 +9,17 @@
 // }
 
 let myobject = {
-    js : 'javascript',
-    Cpp : 'C++',
-    Ruby : 'Ruby',
-    Swift : 'Swift by Apple'
+    js: 'javascript',
+    Cpp: 'C++',
+    Ruby: 'Ruby',
+    Swift: 'Swift by Apple'
 };
 for (const key in myobject) {
     // console.log(`${key} shorcut is for ${myobject[key]}`)
-    }
+}
 
 let programing = ["js", "rb", "py", "java", "cpp", "js"]
-for (let key in programing){
+for (let key in programing) {
     // console.log(programing[key])
 }
 
@@ -30,9 +30,9 @@ for (let key in programing){
 
 // Earo function
 let coding = ["js", "rb", "py", "java", "cpp", "js"]
-coding.forEach((value)=>{
+coding.forEach((value) => {
     // console.log(value)
-} );
+});
 
 // function printMe(item){
 //     console.log(item)
@@ -78,7 +78,7 @@ coding.forEach((value)=>{
 // let data = myname('arbaz')
 // console.log(data)
 
-function printNameAndReturnlength(name){
+function printNameAndReturnlength(name) {
     // console.log(name);
     return name.length
 }
@@ -86,12 +86,12 @@ let data = printNameAndReturnlength("ArslanAfsarAliAnsari")
 // console.log(data);
 
 
-function SumOf3Number(a,b,c){
+function SumOf3Number(a, b, c) {
     // console.log((a+b)*c);
-    return (a+b)
+    return (a + b)
 
 }
-let data1 = SumOf3Number(2,2,2);
+let data1 = SumOf3Number(2, 2, 2);
 // console.log(data1)
 
 
@@ -170,11 +170,11 @@ let data1 = SumOf3Number(2,2,2);
 //     }
 //     return result;
 //   }
-  
+
 //   console.log(factorial(5));
 
-  let arr = [10,20,30,40,50,60,70,80,90];
-  let [a,...b] = arr;
+let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+let [a, ...b] = arr;
 //   console.log(a,b)
 //   console.log(b)
 
@@ -183,13 +183,55 @@ let data1 = SumOf3Number(2,2,2);
 // }
 //   greet("neeraj")
 
-function abz(cb) {
-    console.log(`hello world`)
-    console.log(`this is a higher order function`)
-    cb();
-}
-function greet() {
-    console.log(`my code is ended`);
-}
+// function abz(cb) {
+//     console.log(`hello world`)
+//     console.log(`this is a higher order function`)
+//     cb();
+// }
+// function greet() {
+//     console.log(`my code is ended`);
+// }
 
-abz(greet);
+// abz(greet);
+
+// function myfun( ){
+//     function hello( ){
+//         console.log('hellow world')
+//     }
+//     return hello
+// }
+// let data11 = myfun()
+// data11()
+
+// let arr1 = [2,3,4,5,6];
+// let newarr2 = arr1.map((value, index, array)=>value*3)
+// console.log(newarr2);
+
+// let filterarr = newarr2.filter((value, index, array)=>value>8);
+// console.log(filterarr);
+
+// let redusefun = filterarr.reduce((acc, value)=>acc+value,50);
+// console.log(redusefun);
+
+// let sArr = [9,3,6,4,8,7,5,11];
+// let result1 = sArr.sort((a,b)=>a-b);
+// console.log(result1);
+
+// let snArr = sArr.find((value)=>value>7);
+// console.log(snArr);
+
+// let everArr = [1,5,3,2,6,4,8,9,7];
+// let result7 = everArr.every((value)=>value>10);
+// console.log(result7);
+
+// let somArr = [5,4,9,8,7,3,6,2];
+// let somRes = somArr.some((value)=>value>8);
+// console.log(somRes);
+
+// let filArr = [2,5,4,8,9,6,3,7];
+// let newFilArr = filArr.fill(-5,1,6);
+// console.log(newFilArr);
+
+ let filArr = [2,5,4,8,9,6,3,7];
+ filArr.splice(1,3,-10,-20,-30);
+console.log(filArr);
