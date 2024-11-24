@@ -173,8 +173,8 @@ let data1 = SumOf3Number(2, 2, 2);
 
 //   console.log(factorial(5));
 
-let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90];
-let [a, ...b] = arr;
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+// let [a, ...b] = arr;
 //   console.log(a,b)
 //   console.log(b)
 
@@ -232,6 +232,113 @@ let [a, ...b] = arr;
 // let newFilArr = filArr.fill(-5,1,6);
 // console.log(newFilArr);
 
- let filArr = [2,5,4,8,9,6,3,7];
- filArr.splice(1,3,-10,-20,-30);
-console.log(filArr);
+//  let filArr = [2,5,4,8,9,6,3,7];
+//  filArr.slice(1,2);
+// console.log(filArr);
+
+// let fruit = "banana";
+// if (fruit === "apple") {
+//     console.log("It's an apple!");
+// } else {
+//     console.log("It's not an apple.");
+// }
+
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 2 === 0) {
+
+//         console.log(i)
+//     }
+// }
+
+// const arr = [1, 2, 3, 4];
+// let result = arr.filter(num => num % 2 === 0).map(num => num * 2);
+// console.log(result);
+
+// const multiply = (a, b) => a * b;
+
+// console.log(multiply(3, 4));
+
+// function higherOrderFn(cb) {
+//     console.log(`hello world!`)
+//     console.log(`this is a higher order function`)
+//     cb()
+// };
+// function greet() {
+//     console.log(`i have ended my code`)
+// }
+// higherOrderFn(greet)
+
+let obj = {};
+obj.name = "arbaz";
+obj["hello"] = "hi";
+obj["Full Name"] = "Arbaz Khan";
+// console.log(obj)
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+
+
+for (let i in obj) {
+    // console.log(`${i}, :- ${obj[i]}`)
+
+}
+
+
+let obj1 = {
+    key1: { username: "abz" }
+}
+console.log(obj1.key1.username)
+
+// const userobj = {
+//     name: "arbaz",
+//     age: 20,
+//     email: "abzGmail.com",
+//     about: function () {
+
+//         // method 1  
+//         console.log(`My Name Is ${userobj.name} Age ${userobj.age} Email ${userobj.email}`)
+
+//         //method 2
+//         console.log(`My Name Is ${this.name} Age ${this.age} Email ${this.email}`)
+//     }
+// }
+// userobj.about();
+
+let myMethod={
+    is18 : function(){
+        return this.Age >= 18;
+    },
+    About : function(){
+        return this
+    }
+}
+
+function CreateUser(Name, Email, Age) {
+    let user = {}
+    user.Name = Name,
+        user.Email = Email,
+        user.Age = Age,
+        user.is18 = myMethod.is18,
+        user.About = myMethod.About
+        return user
+}
+
+let user11 = CreateUser("arbaz", "abz@gmail.com", 19)
+console.log(user11.is18());
+
+
+// function CreateUser(Name, Email, Age) {
+//     let user = {}
+//     user.Name = Name,
+//         user.Email = Email,
+//         user.Age = Age,
+//         user.is18 = function () {
+//             return this.Age >= 18
+//         },
+//         user.About = function () {
+//             return this
+//         }
+//     return user
+// }
+
+// let user11 = CreateUser("arbaz", "abz@gmail.com", 19)
+// console.log(user11.is18());
