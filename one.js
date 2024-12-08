@@ -1,7 +1,7 @@
 // let greeting = "Hello World!";
 // for (let greet of greeting) {
 //     console.log(`Each Char is ${greet}`)
-   
+
 // }
 
 // const Map = new Map()
@@ -26,8 +26,8 @@
 // let colomn = row;
 // for (let row = 1; row < colomn; row++) {
 //     console.log(row)
-    
-    
+
+
 // }
 
 //find intersaction
@@ -101,8 +101,8 @@
 
 
 //Answer
-let find = [1,2,3]
-let sumof =find.includes((3));
+let find = [1, 2, 3]
+let sumof = find.includes((3));
 // console.log(sumof)
 
 
@@ -129,7 +129,7 @@ let sumof =find.includes((3));
 //             }
 //         }
 //     }
-    // console.log(BubbleSort);
+// console.log(BubbleSort);
 // }
 
 // Sorting(BubbleSort)
@@ -153,10 +153,10 @@ b = temp;
 //                 let Hello = Arr[j]
 //                 Arr[j] = Arr[j+1]
 //                 Arr[j+1] = Hello
-                
+
 //             }                      
 //         }
-        
+
 //     }    
 //     // console.log(Arr)
 // }
@@ -173,18 +173,18 @@ b = temp;
 // let Arr = [1,2,3,4,5,6,7,8,9,10];
 
 // function Number(Arr) {
-    //     for (let i = 0; i <= Arr.length; i++) {
-    //             for (let j = 0; j <= Arr.length-i; j++) {
-    //                     if (Arr[j+1]>Arr[j]) {
-    //                             let Hello = Arr[j+1]
-    //                             Arr[j+1] = Arr[j]
-    //                             Arr[j] = Hello
-                
-    //         }                      
-    //     }
+//     for (let i = 0; i <= Arr.length; i++) {
+//             for (let j = 0; j <= Arr.length-i; j++) {
+//                     if (Arr[j+1]>Arr[j]) {
+//                             let Hello = Arr[j+1]
+//                             Arr[j+1] = Arr[j]
+//                             Arr[j] = Hello
 
-    // }    
-    // console.log(Arr)
+//         }                      
+//     }
+
+// }    
+// console.log(Arr)
 // }
 //  Number(Arr);
 
@@ -199,18 +199,18 @@ b = temp;
 //  console.log(EveryOne);
 
 
-let arr = [20,15,2,3,5,8,9,10]
-function selectionSort(arr){
+let arr = [20, 15, 2, 3, 5, 8, 9, 10]
+function selectionSort(arr) {
     let n = arr.length;
-    for(let i=0;i<n;i++){
-        let minIdx=i
-        for(let j=i+1;j<n;j++){
-            if(arr[j]<arr[minIdx]){
-                minIdx=j;
+    for (let i = 0; i < n; i++) {
+        let minIdx = i
+        for (let j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIdx]) {
+                minIdx = j;
             }
         }
-        if(minIdx !== i){
-            [arr[i],arr[minIdx]]=[arr[minIdx], arr[i]]
+        if (minIdx !== i) {
+            [arr[i], arr[minIdx]] = [arr[minIdx], arr[i]]
         }
     }
     return arr;
@@ -245,17 +245,89 @@ function isPalindrome(str) {
 //     // Now, call the callback function after greeting
 //     callback();
 //   }
-  
+
 //   // Define a callback function
 //   function sayGoodbye() {
 //     console.log('Goodbye!');
 //   }
-  
+
 //   // Pass the callback to greet()
 //   greet('Dogy', sayGoodbye);
-  
 
 
+// let fac = 1;
+// for (let i = 1; i <= 6; i++) {
+//     fac = fac * i;
+// }
+// console.log(fac);
+
+// function facfor(number) {
+//     let fac = 1;
+//     for (let i = 1; i <= number; i++) {
+//      fac = fac*i;
+// }
+// return fac
+// }
+// console.log(facfor(50));
+
+// console.log(fname);
+// let fname = "arbaz";
+// console.log(fname);
+//Identifier 'name' has already been declared
+
+// let fname = 'pritam'
+// function printname(name) {
+//     console.log(arguments)
+//     let lname = name;
+    // console.log(fname, lname);
+// }
+// printname("gupta", "sddf", "sdgf");
+// a lexical scop where function esialy get veriables from it's parent's scop or globel scop if variabel is not present it's own scop then
+
+// hosting is the proces where we can use variable as per there scop and in hostingh we are useing early error chacking & scop elogation
+
+// function printFullName() {
+//     let fName = "pritam";
+//     let lName = "gupta";
+//     function PrintName() {
+//         console.log(fName, lName);
+//     }
+//     PrintName()
+// }
+// printFullName();
+
+function say() {
+    let counter = 1;
+   return function() {
+        if (counter<2) {
+            console.log("welcome");
+            counter++;
+        }else{
+            console.log("you are already welcome")
+        }
+    }
+}
+// let mysay = say();
+// mysay();
+// mysay();
+
+function saywelcome() {
+    let counter = 0;
+    if (counter<1) {
+        console.log("you are most welcome");
+        counter++;
+    }else{
+        console.log("you are again most welcome")
+    }
+}
+// console.log(saywelcome());
+
+// let item = [100, 200, 300];
+// for(let i = 0; i < item.length; i++){
+//     let offer = item[i]/10;
+// item[i] += offer;
+// }
+// console.log(item)
 
 
 
